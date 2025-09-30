@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- ----- Navbar ------ -->
+<header>
+  <h1 class="logo">Focus Studio</h1>
+  <i class='menu-bar bx bx-menu'></i> 
+  <nav class="nav-overlay">
+    <ul>
+      <i class='close-bar bx bx-x'></i> 
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="home" id="home">
+  <!-- Video background -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline class="video-desktop">
+      <source src="./assets/bg-vedio.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop playsinline class="video-mobile">
+      <source src="./assets/bg-vedio2.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Overlay for darker effect -->
+  <div class="overlay"></div>
+
+  <!-- Text content -->
+  <h1>Capturing Life's <br />Perfect Moments</h1>
+  <p>
+    Professional photography and creative design services that
+    <br />transform your vision into stunning visual stories
+  </p>
+  <div class="home-btns">
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Book a Session</button>
+    <button class="btn2" onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' })">View Our Work</button>
+  </div>
+</section>
+
+    <!-- ----- Services Section -----  -->
+    <section class="services" id="services">
+      <h1 class="title">Photography Services</h1>
+      <p class="subtitle">
+        Professional photography and design services tailored to your needs
+      </p>
+      <div class="services-container">
+        <div class="service-box">
+          <h1>👰</h1>
+          <h3>Wedding Photography</h3>
+          <p>
+            Capture your special day with beautiful, timeless wedding
+            photography that tells your unique love story.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <h1>📸</h1>
+          <h3>Portrait Photography</h3>
+          <p>
+            Create stunning portraits that reflect personality and style,
+            perfect for personal or professional use.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <h1>🎬</h1>
+          <h3>Event Videography</h3>
+          <p>
+            Document your events with cinematic videos that capture every
+            memorable moment.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <h1>🌄</h1>
+          <h3>Landscape Photography</h3>
+          <p>
+            Professional landscape shots for travel, tourism, or personal
+            projects with breathtaking quality.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <h1>🖌️</h1>
+          <h3>Graphic Design</h3>
+          <p>
+            Create visually appealing graphics for social media, websites, and
+            branding materials.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <h1>✂️</h1>
+          <h3>Photo & Video Editing</h3>
+          <p>
+            Enhance your photos and videos with professional editing to achieve
+            polished, high-quality results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- Gallery Section -----  -->
+    <section class="gallery" id="gallery">
+      <h1 class="title">Gallery</h1>
+      <p class="subtitle">
+        Explore our portfolio showcasing the diversity and quality of our photography across different events and occasions
+      </p>
+      <input type="radio" name="Photo" id="check1" checked />
+      <input type="radio" name="Photo" id="check2" />
+      <input type="radio" name="Photo" id="check3" />
+      <input type="radio" name="Photo" id="check4" />
+
+      <div class="top-menu">
+        <label for="check1">All</label>
+        <label for="check2">Family</label>
+        <label for="check3">Wedding</label>
+        <label for="check4">Kids</label>
+      </div>
+
+      <div class="photo-gallery">
+        <div class="pic family">
+          <img src="./assets/family1.webp" alt="" />
+        </div>
+        <div class="pic kids">
+          <img src="./assets/kids1.jpg" alt="" />
+        </div>
+        <div class="pic wedding">
+          <img src="./assets/wedding1.webp" alt="" />
+        </div>
+        <div class="pic family">
+          <img src="./assets/family2.jpg" alt="" />
+        </div>
+        <div class="pic kids">
+          <img src="./assets/kids2.jpg" alt="" />
+        </div>
+        <div class="pic wedding">
+          <img src="./assets/wedding2.jpg" alt="" />
+        </div>
+        <div class="pic family">
+          <img src="./assets/family3.webp" alt="" />
+        </div>
+        <div class="pic kids">
+          <img src="./assets/kids3.jpg" alt="" />
+        </div>
+        <div class="pic wedding">
+          <img src="./assets/wedding3.jpg" alt="" />
+        </div>
+        <div class="pic family">
+          <img src="./assets/family4.webp" alt="" />
+        </div>
+        <div class="pic kids">
+          <img src="./assets/kids4.jpg" alt="" />
+        </div>
+        <div class="pic kids">
+          <img src="./assets/kids5.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- About Section -----  -->
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2 class="title">About Focus Studio</h2>
+        <p>
+          FOCUS Studio represents the pinnacle of modern photography, combining
+          cutting-edge technology with artistic excellence. Our team of
+          passionate photographers specializes in capturing the essence of your
+          most important moments. <br /><br />
+          With over a decade of experience in wedding and event photography,
+          we've developed a unique style that blends photojournalistic
+          storytelling with fine art aesthetics. Every image we create is
+          meticulously crafted to preserve not just how things looked, but how
+          they felt. <br /><br />
+          We believe that great photography goes beyond technical perfection –
+          it's about creating a connection, telling a story, and preserving
+          memories that will be treasured for generations to come.
+        </p>
+        <div class="about-features">
+          <div class="feature-item">
+            <span class="feature-number">800+</span>
+            <span class="feature-label">Weddings Shot</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-number">1500+</span>
+            <span class="feature-label">Events Covered</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-number">10</span>
+            <span class="feature-label">Years Experience</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-number">98%</span>
+            <span class="feature-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <img
+          src="https://t3.ftcdn.net/jpg/00/79/36/04/360_F_79360425_13tH0FGR7nYTNlXWKOWtLmzk7BAikO1b.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- ----- Contact Section -----  -->
+    <div class="contact" id="contact">
+      <h1 class="title">Let's Create Something Beautiful</h1>
+      <p class="subtitle">
+        Ready to capture your special moments? Get in touch with us today!
+      </p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>📧</span>
+          <span>hello@focus.studio</span>
+        </div>
+        <div class="contact-item">
+          <span>📱</span>
+          <span>+1 (555) 987-6543</span>
+        </div>
+        <div class="contact-item">
+          <span>📍</span>
+          <span>Photography District, Creative City</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----- Footer Section -----  -->
+    <footer>
+      <p>© 2025 FOCUS Photography Studio. All rights reserved.</p>
+      <p>Made By Alen Shibu</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
